@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Uno Game</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+  <div id="welcome-screen">
+    <h1>Uno Game for High Seas</h1>
+    <button class="button" id="start-game">Play with AI</button>
+  </div>
+
+  <div id="game" style="display: none;">
+    <h1>Uno Game</h1>
+    <h2>Bot</h2>
+    <div id="bot-hand"></div>
+    <div id="middle">
+    <div id="current-card" class="card"></div>
+      <button class="button" id="draw-card">Draw Card</button>
+    </div>
+    <h2>You</h2>
+    <div id="player-hand"></div>
+    <div id="message" class="message"></div>
+  </div>
+
+  <!-- Custom Alert -->
+  <div id="custom-alert" style="display: none;">
+    <div id="custom-alert-box">
+      <p id="alert-message"></p>
+      <button class="button" id="close-alert">OK</button>
+    </div>
+  </div>
+
+  <script src="./main.js"></script>
+</body>
+
+</html>
